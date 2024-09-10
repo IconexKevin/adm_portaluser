@@ -75,7 +75,7 @@ namespace ICONEX_ADM_USER
                                     }).showToast()
                                 </script>";
 
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+                    
 
                     break;
                 case 1:
@@ -95,7 +95,6 @@ namespace ICONEX_ADM_USER
                                     }).showToast()
                                 </script>";
 
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
                     break;
                 case 2:
                     script = @"Toastify({
@@ -111,13 +110,15 @@ namespace ICONEX_ADM_USER
                                         },
                                         onClick: function(){ } // Callback after click
                                     }).showToast()";
-                    ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+                    
 
                     break;
             }
 
-            
-                
+            ScriptManager.RegisterStartupScript(this, typeof(Page), "alerta", script, false);
+
+
+
 
         }
 
