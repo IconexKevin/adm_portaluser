@@ -35,6 +35,7 @@ namespace ICONEX_ADM_USER
         {
             string userInput = User.Text;
             string userPassword = Pass.Text;
+            bool login = true;
 
             if (userInput == "")
             {
@@ -48,7 +49,15 @@ namespace ICONEX_ADM_USER
                 }
                 else
                 {
-                    Response.Redirect("~/About.aspx");
+                    if (!login)
+                    {
+                        Mensajeria(2);
+                    }
+                    else
+                    {
+                        Response.Redirect("~/access/panel.aspx");
+                    }
+
                 }
             }
         }
@@ -75,13 +84,13 @@ namespace ICONEX_ADM_USER
                                     }).showToast()
                                 </script>";
 
-                    
+
 
                     break;
                 case 1:
                     script = @"<script type='text/javascript'>
                                 Toastify({
-                                        text: 'oe',
+                                        text: 'Credenciales incorrectas',
                                         duration: 3000,
                                         close: true,
                                         gravity: 'top', // `top` or `bottom`
@@ -89,7 +98,7 @@ namespace ICONEX_ADM_USER
                                         stopOnFocus: true, // Prevents dismissing of toast on hover
                                         style:
                                         {
-                                            background: 'linear-gradient(to right, #00b09b, #96c93d)',
+                                            background: 'linear-gradient(to right, #cb2d3e, #ef473a)',
                                         },
                                         onClick: function(){ } // Callback after click
                                     }).showToast()
@@ -97,8 +106,9 @@ namespace ICONEX_ADM_USER
 
                     break;
                 case 2:
-                    script = @"Toastify({
-                                        text: 'eo',
+                    script = @"<script tpe='text/javascript'>
+                                    Toastify({
+                                        text: 'Credenciales Incorrectas 2',
                                         duration: 3000,
                                         close: true,
                                         gravity: 'top', // `top` or `bottom`
@@ -106,11 +116,12 @@ namespace ICONEX_ADM_USER
                                         stopOnFocus: true, // Prevents dismissing of toast on hover
                                         style:
                                         {
-                                            background: 'linear-gradient(to right, #00b09b, #96c93d)',
+                                            background: 'linear-gradient(to right, #cb2d3e, #ef473a)',
                                         },
                                         onClick: function(){ } // Callback after click
-                                    }).showToast()";
-                    
+                                    }).showToast()
+                                </script>";
+
 
                     break;
             }
