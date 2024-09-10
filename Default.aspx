@@ -1,8 +1,13 @@
 ﻿<%@ Page Title="Iconex - Intranet" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ICONEX_ADM_USER._Default" %>
 
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</asp:Content>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <section class="clean-block clean-form dark">
+    <section class="clean-block clean-form dark" style="height: 86vh;">
         <div class="container">
             <div class="block-heading">
                 <h2 class="text-info">Inicio de sesion</h2>
@@ -52,8 +57,7 @@
                             </div>
                         </div>
                         <div class="card-footer" style="background-color: #F3EDF7">
-                            <asp:Button ID="Button_login" runat="server" Text="Iniciar sesión"
-                                CssClass="btn btn-light" />
+                            <asp:Button ID="Button_login" runat="server" Text="Iniciar sesión" CssClass="btn btn-light" OnClick="Button_login_Click"/>
                         </div>
                     </div>
                 </div>
