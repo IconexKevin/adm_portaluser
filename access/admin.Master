@@ -12,39 +12,18 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <div class="wrapper sidebar_minimize">
-        <form id="form1" runat="server">
-            <div class="main-header">
-                <div class="logo-header" data-background-color="blue" style="padding-top: 12px;">
-                    <a href="../Default.aspx" class="logo-header animsition-link">
-                        <img src="../Assets/images/logo_color.png" alt="Brand" class="navbar-brand" />
+    <form id="form1" runat="server">
+        <div>
+            <nav class="navbar navbar-expand-lg" style="background-color: #F3EDF7;">
+                <div class="container">
+                    <a class="navbar-brand" href="/Default.aspx">
+                        <img src="../Assets/images/logo_color.png" alt="Logo" width="100" height="24" />
                     </a>
-                    <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
-                            <i class="icon-menu"></i>
-                        </span>
-                    </button>
-                    <button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
-                    <div class="nav-toggle" style="margin-top: 20px;">
-                        <button class="btn btn-toggle toggle-sidebar">
-                            <i class="icon-menu"></i>
-                        </button>
-                    </div>
                 </div>
-                <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
-
-                </nav>
-<%--                <nav class="navbar navbar-expand-lg" style="background-color: #F3EDF7;">
-                    <div class="container">
-                        <a class="navbar-brand" href="/Default.aspx">
-                            <img src="../Assets/images/logo_color.png" alt="Logo" width="100" height="24" />
-                        </a>
-                    </div>
-                </nav>--%>
-                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                </asp:ContentPlaceHolder>
-            </div>
+            </nav>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
     </form>
-    </div>
 </body>
 </html>
