@@ -23,13 +23,22 @@
 
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div>
-            <h1>Panel de control 2</h1>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
-            </asp:ContentPlaceHolder>
+    <main>
+        <nav>
+            <div class="container" >
+            <a class="navbar-brand" href="/Default.aspx">
+                <img src="Assets/images/logo_color.png" alt="logo" width="100" height="24"/>
+            </a>
         </div>
-    </form>
+        </nav>
+        <form id="form1" runat="server">
+            <div>
+                <h1>Panel de control 2</h1>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+                </asp:ContentPlaceHolder>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
