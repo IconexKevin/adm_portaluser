@@ -3,9 +3,20 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container text-center">
-        <div class="row">
-            
-            
+        <div class="row align-items-start">
+            <div class="col-1">
+                <ul>
+                    <li>Panel de control</li>
+                </ul>
+            </div>
+            <div class="col-12">
+                <ul>
+                    <li>Panel de control</li>
+                </ul>
+            </div>
+            <div class="col">
+
+            </div>
         </div>
     </div>
 </asp:Content>
