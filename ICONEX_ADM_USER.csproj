@@ -107,8 +107,10 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="access\panel.aspx" />
+    <Content Include="Assets\icons\apps.png" />
+    <Content Include="Assets\icons\groups.png" />
+    <Content Include="Assets\icons\home.png" />
     <Content Include="Assets\icons\iconex.jpeg" />
-    <Content Include="Assets\icons\person.svg" />
     <Content Include="Assets\images\logo_color.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />

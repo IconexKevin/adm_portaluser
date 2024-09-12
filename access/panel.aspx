@@ -2,20 +2,14 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="container text-center">
-        <div class="row align-items-start">
-            <div class="col-1">
-                <ul>
-                    <li>Panel de control</li>
-                </ul>
+    <div class="container-fluid">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labeledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
             </div>
-            <div class="col-12">
-                <ul>
-                    <li>Panel de control</li>
-                </ul>
-            </div>
-            <div class="col">
-
+            <div class="offcanvas-body">
+                Content for the offcanvas goes here. You can place just about any bootstrap component or custom elements here.
             </div>
         </div>
     </div>
