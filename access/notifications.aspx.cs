@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace ICONEX_ADM_USER.test
+namespace ICONEX_ADM_USER.access
 {
-    public partial class Site1 : System.Web.UI.MasterPage
+    public partial class notifications : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

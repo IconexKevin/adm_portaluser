@@ -106,11 +106,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="access\notifications.aspx" />
     <Content Include="access\panel.aspx" />
+    <Content Include="access\userApps.aspx" />
+    <Content Include="access\users.aspx" />
     <Content Include="Assets\icons\apps.png" />
+    <Content Include="Assets\icons\edit_icon.png" />
     <Content Include="Assets\icons\groups.png" />
     <Content Include="Assets\icons\home.png" />
     <Content Include="Assets\icons\iconex.jpeg" />
+    <Content Include="Assets\icons\notifications.png" />
+    <Content Include="Assets\icons\notifications_unread.png" />
+    <Content Include="Assets\icons\person_add.png" />
+    <Content Include="Assets\icons\rule.png" />
     <Content Include="Assets\images\logo_color.png" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -174,12 +182,33 @@
     <Compile Include="access\admin.Master.designer.cs">
       <DependentUpon>admin.Master</DependentUpon>
     </Compile>
+    <Compile Include="access\notifications.aspx.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="access\notifications.aspx.designer.cs">
+      <DependentUpon>notifications.aspx</DependentUpon>
+    </Compile>
     <Compile Include="access\panel.aspx.cs">
       <DependentUpon>panel.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="access\panel.aspx.designer.cs">
       <DependentUpon>panel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="access\userApps.aspx.cs">
+      <DependentUpon>userApps.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="access\userApps.aspx.designer.cs">
+      <DependentUpon>userApps.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="access\users.aspx.cs">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="access\users.aspx.designer.cs">
+      <DependentUpon>users.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
@@ -222,13 +251,6 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
-    <Compile Include="test\Site1.Master.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="test\Site1.Master.designer.cs">
-      <DependentUpon>Site1.Master</DependentUpon>
-    </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -244,7 +266,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
-    <Content Include="test\Site1.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
